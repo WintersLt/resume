@@ -1,0 +1,67 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{hyperref}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Akash Pandey}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{3521-302 Ivy Commons Dr.}
+ \moveleft.5\hoffset\centerline{Raleigh, NC 27606}
+ \moveleft.5\hoffset\centerline{(919) 579-3411, apandey5@ncsu.edu }
+
+
+\begin{resume}
+ 
+\section{SUMMARY}  Software developer with three years of experience in developing server side scalable storage solutions for telecom operators. Have experience in NoSql databases. Looking for summer internship opportunities.
+ 
+\section{EXPERIENCE} {\sl Senior Engineer-R\&D } \hfill September 2012 - August2015 \\
+               Mavenir Systems (now Mitel Networks), Bangalore, India \\
+			   Worked in small teams of 2-3 people, taking ownership of the products. Was involved in following projects:
+                \begin{itemize}  \itemsep -0pt %reduce space between items
+                \item  {\sl Wrapper client library in C++ for Cassandra NoSql database:} Developed a Thrift RPC based access layer with connection pooling and thread pooling. The library was used by various products interacting with Cassandra.
+
+                \item  {\sl Centralized file storage for telecom users:} Developed the IMAP based front end to store user’s data in a backend comprising of OpenStack Swift and Cassandra, serving all customers of a telecom operator.
+
+				\item  {\sl Visual Voicemail server:} Dustomized the generic distributed file store to comply with Apple’s Visual VoiceMail specifications. The product is currently in production.
+
+				\item  {\sl Generic relational content storage for Rich Communication Suite (RCSe):} Developed HTTP/REST based API calls and the backend Oracle stored procedures.
+
+			   \end{itemize}
+
+\section{ACHIEVMENTS} % \begin{itemize}  \itemsep -2pt %reduce space between items
+					   %\item Received five separate ''SPOT'' awards in recognition of outstanding contribution to a project at my first employer- Mavenir Systems.\\
+					   Received five separate ''SPOT'' awards in recognition of outstanding contribution to a project at my first employer-Mavenir Systems.\\
+
+\section{TECHNICAL \\ SKILLS} {\sl Languages:} C/C++, shell scripting, Ruby.\\
+                {\sl Databases:} Cassandra, OpenStack Swift, Oracle.\\
+                {\sl Tools:} gdb, Valgrind, Wireshark.\\
+                {\sl Operating Systems:} Linux, Windows.\\
+
+\section{EDUCATION} {\sl Master of Computer Science} \\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                NC State University, Raleigh, NC, 
+                expected December 2016 \\
+                Courses: Data intensive computing, Computer networks, Object oriented design and development \\ \\
+				{\sl Bachelor of Technology} \\ 
+				A.K. Garg Engineering College, Ghaziabad, India, completed June 2012\\
+                Major: Computer science and engineering \\
+\section{PUBLICATION}  ''Design of a Parallel Migrating Web Crawler'' \\
+					   Description : The paper proposes a simple mobile agent based design for introducing both parallelism and migration in a web crawler.
+					   (\url{http://www.ijarcsse.com/docs/papers/April2012/Volume_2_issue_4/V2I40059.pdf})
+
+\end{resume}
+\end{document}
+
+
+
+
