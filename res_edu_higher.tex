@@ -1,0 +1,69 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{hyperref}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Akash Pandey}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{3521-302 Ivy Commons Dr.}
+ \moveleft.5\hoffset\centerline{Raleigh, NC 27606}
+ \moveleft.5\hoffset\centerline{(919) 579-3411, apandey5@ncsu.edu }
+
+
+\begin{resume}
+ 
+\section{SUMMARY}  Software developer with three years of experience in developing server side scalable storage solutions for telecom operators. Have experience in NoSql databases. Looking for summer internship opportunities.
+
+\section{EDUCATION} {\sl Master of Computer Science} \\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                NC State University, Raleigh, NC, 
+                expected graduation in December 2016 \\
+                Courses: Data intensive computing, Computer networks, Object oriented design and development \\ \\
+				{\sl Bachelor of Technology} \\ 
+				A.K. Garg Engineering College, Ghaziabad, India, completed June 2012\\
+                Major: Computer science and engineering  \hfill Percentage: 70.9\%
+
+ 
+\section{EXPERIENCE} {\sl Senior Engineer-R\&D } \hfill September 2012 - August2015 \\
+               Mavenir Systems (now Mitel Networks), Bangalore, India \\
+			   Worked in small teams of 2-3 people, taking ownership of the products. Was involved in following projects:
+                \begin{itemize}  \itemsep -0pt %reduce space between items
+                \item  {\sl Wrapper client library in C++ for Cassandra NoSql database:} Built a Thrift RPC based access layer with connection pooling and thread pooling. The library was used by various products interacting with Cassandra.
+
+                \item  {\sl Centralized file storage for telecom :} Built an OpenStack Swift and Cassandra based file store with IMAP abd REST based front end connecting to user's smartphones.
+
+				\item  {\sl Visual Voicemail server:} Customized the generic distributed file store to comply with Apple’s Visual VoiceMail specifications. The product is currentl serving live user traffic.
+
+				\item  {\sl Generic relational content storage for Rich Communication Suite (RCSe):} Developed HTTP/REST based API calls and the backend Oracle stored procedures.
+
+			   \end{itemize}
+
+\section{OTHER\\PROJECTS} {\sl Building a Genetic algorithm framework on Apache YARN:} The project aims at distributing GA operations onto YARN clusters for performance speed-ups.
+\section{ACHIEVMENTS} % \begin{itemize}  \itemsep -2pt %reduce space between items
+					   %\item Received five separate ''SPOT'' awards in recognition of outstanding contribution to a project at my first employer- Mavenir Systems.\\
+					   Received five separate ''SPOT'' awards in recognition of outstanding contribution to a project at my first employer-Mavenir Systems.
+
+\section{TECHNICAL \\ SKILLS} {\sl Languages:} C/C++, shell scripting, Ruby.\\
+                {\sl Databases:} Cassandra, OpenStack Swift, Oracle.\\
+                {\sl Tools:} gdb, Valgrind, Wireshark.\\
+                {\sl Operating Systems:} Linux, Windows.
+
+\section{PUBLICATION}  ''Design of a Parallel Migrating Web Crawler'' \\
+					   The paper proposes a simple mobile agent based design for introducing both parallelism and migration in a web crawler.(\url http://bit.ly/1VjDNMz)
+
+\end{resume}
+\end{document}
+
+
+
+
